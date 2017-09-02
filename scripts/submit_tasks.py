@@ -1,7 +1,10 @@
 import sys
 from datetime import datetime, timedelta
 
-from github import Github
+try:
+    from github import Github
+except ModuleNotFoundError:
+    print("Установите PyGithub: pip install PyGithub")
 
 error_message = '''
 Скрипт надо вызывать с одним аргументом - текст сообщения в двойных кавычках
