@@ -11,8 +11,8 @@ except ModuleNotFoundError:
 username = ''
 #Пароль пользователя на GitHub
 password = ''
-#Название репозитория. Например online-3-natasha-samoylenko
-repo_name = ''
+#Название репозитория. Например pyneng/online-3-natasha-samoylenko
+repo_name = 'pyneng/'
 
 
 error_message = '''
@@ -33,8 +33,7 @@ def post_comment_to_last_commit(msg, delta_days=14):
     since = datetime.now() - timedelta(days=delta_days)
 
     g = Github(username, password)
-    user = g.get_user()
-    repo = user.get_repo(repo_name)
+    repo = g.get_repo(repo_name)
 
     commits = repo.get_commits(since=since)
 
