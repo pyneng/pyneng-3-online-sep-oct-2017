@@ -1,3 +1,10 @@
+'''
+Шаблоны для конфигурации оборудования Cisco:
+* basic_cfg - конфигурация сервисов
+* lines_cfg - конфигурация line con и line vty
+'''
+
+
 basic_cfg = '''
 service timestamps debug datetime msec localtime show-timezone year
 service timestamps log datetime msec localtime show-timezone year
