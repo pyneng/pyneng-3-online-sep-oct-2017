@@ -8,7 +8,7 @@ data = [('0000.AAAA.CCCC', 'sw1', 'Cisco 3750', 'London, Green Str'),
 
 con = sqlite3.connect('sw_inventory2.db')
 
-con.execute('''create table switch
+con.execute('''create table if not exists switch
             (mac text not NULL primary key, hostname text, model text, location text)''')
 
 query = 'INSERT into switch values (?, ?, ?, ?)'

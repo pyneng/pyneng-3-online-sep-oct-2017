@@ -57,7 +57,7 @@ if __name__ == '__main__':
     con = create_connection('sw_inventory3.db')
 
     print('Создание таблицы...')
-    schema = '''create table switch
+    schema = '''create table if not exists switch
                 (mac text primary key, hostname text, model text, location text)'''
     con.execute(schema)
 
