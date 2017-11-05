@@ -13,7 +13,7 @@ devices = yaml.load(open('devices.yaml'))
 #logging setup
 FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
 logging.basicConfig(level=logging.INFO, format=FORMAT)
-
+logging.info('Start')
 
 def connect_ssh(device_dict, command):
     logging.info('Connection to device {}'.format(device_dict['ip']))
