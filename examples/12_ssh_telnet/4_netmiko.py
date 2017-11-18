@@ -9,7 +9,7 @@ USER = input('Username: ')
 PASSWORD = getpass.getpass()
 ENABLE_PASS = getpass.getpass(prompt='Enter enable password: ')
 
-DEVICES_IP = ['192.168.100.1','192.168.100.2','192.168.100.3']
+DEVICES_IP = ['192.168.100.1', '192.168.100.2', '192.168.100.3']
 
 
 for IP in DEVICES_IP:
@@ -66,4 +66,3 @@ FastEthernet0/1.50     10.3.50.1       YES manual up                    up
 FastEthernet0/1.60     10.3.60.1       YES manual up                    up
 FastEthernet0/1.70     10.3.70.1       YES manual up                    up
 '''
-
