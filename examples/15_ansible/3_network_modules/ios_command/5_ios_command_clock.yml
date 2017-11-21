@@ -1,0 +1,18 @@
+---
+
+- name: Run show commands on routers
+  hosts: cisco-routers
+  gather_facts: false
+  connection: local
+
+  tasks:
+
+    - name: run clock set
+      ios_command:
+        commands: clock set 09:26:00 19 Nov 2017
+        provider: "{{ cli }}"
+      register: clock_result
+
+    - name: Debug registered var
+      debug: var=clock_result
+
