@@ -1,0 +1,76 @@
+2017-11-19 08:27:59,613 p=24648 u=vagrant |  PLAY [Collect IOS facts] *******************************************************
+2017-11-19 08:27:59,634 p=24648 u=vagrant |  TASK [Facts] *******************************************************************
+2017-11-19 08:28:02,890 p=24648 u=vagrant |  ok: [192.168.100.2]
+2017-11-19 08:28:02,984 p=24648 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:28:02,990 p=24648 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:28:02,993 p=24648 u=vagrant |  TASK [Create all_facts dir] ****************************************************
+2017-11-19 08:28:03,622 p=24648 u=vagrant |  ok: [192.168.100.2]
+2017-11-19 08:28:03,630 p=24648 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:28:03,636 p=24648 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:28:03,639 p=24648 u=vagrant |  TASK [Copy facts to files] *****************************************************
+2017-11-19 08:28:04,769 p=24648 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:28:04,781 p=24648 u=vagrant |  ok: [192.168.100.2]
+2017-11-19 08:28:04,783 p=24648 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:28:04,791 p=24648 u=vagrant |  PLAY RECAP *********************************************************************
+2017-11-19 08:28:04,794 p=24648 u=vagrant |  192.168.100.1              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:28:04,795 p=24648 u=vagrant |  192.168.100.2              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:28:04,796 p=24648 u=vagrant |  192.168.100.3              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:28:24,851 p=24967 u=vagrant |  Using /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/ansible.cfg as config file
+2017-11-19 08:28:25,081 p=24967 u=vagrant |  PLAY [Collect IOS facts] *******************************************************
+2017-11-19 08:28:25,100 p=24967 u=vagrant |  TASK [Facts] *******************************************************************
+2017-11-19 08:28:28,396 p=24967 u=vagrant |  ok: [192.168.100.1] => {"ansible_facts": {"ansible_net_all_ipv4_addresses": ["192.168.200.1", "192.168.100.1", "192.168.230.1", "19.16.200.1", "10.200.0.1", "10.100.0.1", "10.30.0.1"], "ansible_net_all_ipv6_addresses": [], "ansible_net_gather_subset": ["default", "interfaces"], "ansible_net_hostname": "R1", "ansible_net_image": "unix:/home/vagrant/********/images/i86bi_linux-adventerprisek9-ms", "ansible_net_interfaces": {"Ethernet0/0": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "192.168.100.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6500", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/1": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "192.168.200.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "0203.e800.6510", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/2": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "19.16.200.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6520", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/3": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "192.168.230.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6530", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/3.100": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "10.100.0.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6530", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/3.200": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "10.200.0.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6530", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/3.300": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "10.30.0.1", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6530", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}}, "ansible_net_model": null, "ansible_net_serialnum": "2048101", "ansible_net_version": "15.2(2.3)T"}, "changed": false}
+2017-11-19 08:28:28,501 p=24967 u=vagrant |  ok: [192.168.100.3] => {"ansible_facts": {"ansible_net_all_ipv4_addresses": ["192.168.100.3"], "ansible_net_all_ipv6_addresses": [], "ansible_net_gather_subset": ["default", "interfaces"], "ansible_net_hostname": "R3", "ansible_net_image": "unix:/home/vagrant/********/images/i86bi_linux-adventerprisek9-ms", "ansible_net_interfaces": {"Ethernet0/0": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "192.168.100.3", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6700", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/1": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6710", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}, "Ethernet0/2": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6720", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}, "Ethernet0/3": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6730", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}}, "ansible_net_model": null, "ansible_net_serialnum": "2048103", "ansible_net_version": "15.2(2.3)T"}, "changed": false}
+2017-11-19 08:28:28,509 p=24967 u=vagrant |  ok: [192.168.100.2] => {"ansible_facts": {"ansible_net_all_ipv4_addresses": ["192.168.100.2", "10.1.1.1"], "ansible_net_all_ipv6_addresses": [], "ansible_net_gather_subset": ["default", "interfaces"], "ansible_net_hostname": "R2", "ansible_net_image": "unix:/home/vagrant/********/images/i86bi_linux-adventerprisek9-ms", "ansible_net_interfaces": {"Ethernet0/0": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": {"address": "192.168.100.2", "masklen": 24}, "lineprotocol": "up ", "macaddress": "aabb.cc00.6600", "mediatype": null, "mtu": 1500, "operstatus": "up", "type": "AmdP2"}, "Ethernet0/1": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6610", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}, "Ethernet0/2": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6620", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}, "Ethernet0/3": {"bandwidth": 10000, "description": null, "duplex": null, "ipv4": null, "lineprotocol": "down ", "macaddress": "aabb.cc00.6630", "mediatype": null, "mtu": 1500, "operstatus": "administratively down", "type": "AmdP2"}, "Loopback5": {"bandwidth": 8000000, "description": null, "duplex": null, "ipv4": {"address": "10.1.1.1", "masklen": 32}, "lineprotocol": "up ", "macaddress": "10.1.1.1/32", "mediatype": null, "mtu": 1514, "operstatus": "up", "type": null}}, "ansible_net_model": null, "ansible_net_serialnum": "2048102", "ansible_net_version": "15.2(2.3)T"}, "changed": false}
+2017-11-19 08:28:28,510 p=24967 u=vagrant |  TASK [Create all_facts dir] ****************************************************
+2017-11-19 08:28:29,215 p=24967 u=vagrant |  ok: [192.168.100.2] => {"changed": false, "gid": 1000, "group": "vagrant", "mode": "0755", "owner": "vagrant", "path": "./all_facts/", "size": 4096, "state": "directory", "uid": 1000}
+2017-11-19 08:28:29,220 p=24967 u=vagrant |  ok: [192.168.100.1] => {"changed": false, "gid": 1000, "group": "vagrant", "mode": "0755", "owner": "vagrant", "path": "./all_facts/", "size": 4096, "state": "directory", "uid": 1000}
+2017-11-19 08:28:29,231 p=24967 u=vagrant |  ok: [192.168.100.3] => {"changed": false, "gid": 1000, "group": "vagrant", "mode": "0755", "owner": "vagrant", "path": "./all_facts/", "size": 4096, "state": "directory", "uid": 1000}
+2017-11-19 08:28:29,235 p=24967 u=vagrant |  TASK [Copy facts to files] *****************************************************
+2017-11-19 08:28:30,480 p=24967 u=vagrant |  ok: [192.168.100.1] => {"changed": false, "checksum": "c0bdda82cb327532e601ef979b991756ed2d674b", "dest": "all_facts/192.168.100.1_facts.json", "gid": 1000, "group": "vagrant", "mode": "0644", "owner": "vagrant", "path": "all_facts/192.168.100.1_facts.json", "size": 2703, "state": "file", "uid": 1000}
+2017-11-19 08:28:30,496 p=24967 u=vagrant |  ok: [192.168.100.2] => {"changed": false, "checksum": "4f9e29ac2183ec052a96c5bf0788ec99c676bc54", "dest": "all_facts/192.168.100.2_facts.json", "gid": 1000, "group": "vagrant", "mode": "0644", "owner": "vagrant", "path": "all_facts/192.168.100.2_facts.json", "size": 1761, "state": "file", "uid": 1000}
+2017-11-19 08:28:30,509 p=24967 u=vagrant |  ok: [192.168.100.3] => {"changed": false, "checksum": "a3221fe2bf1a4363191a8d1b0615977f89794015", "dest": "all_facts/192.168.100.3_facts.json", "gid": 1000, "group": "vagrant", "mode": "0644", "owner": "vagrant", "path": "all_facts/192.168.100.3_facts.json", "size": 1386, "state": "file", "uid": 1000}
+2017-11-19 08:28:30,511 p=24967 u=vagrant |  PLAY RECAP *********************************************************************
+2017-11-19 08:28:30,512 p=24967 u=vagrant |  192.168.100.1              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:28:30,512 p=24967 u=vagrant |  192.168.100.2              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:28:30,512 p=24967 u=vagrant |  192.168.100.3              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:29:13,644 p=25286 u=vagrant |  PLAY [Collect IOS facts] *******************************************************
+2017-11-19 08:29:13,663 p=25286 u=vagrant |  TASK [Facts] *******************************************************************
+2017-11-19 08:29:17,027 p=25286 u=vagrant |  ok: [192.168.100.2]
+2017-11-19 08:29:17,207 p=25286 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:29:17,209 p=25286 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:29:17,211 p=25286 u=vagrant |  TASK [Create all_facts dir] ****************************************************
+2017-11-19 08:29:17,899 p=25286 u=vagrant |  ok: [192.168.100.2]
+2017-11-19 08:29:17,902 p=25286 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:29:17,908 p=25286 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:29:17,910 p=25286 u=vagrant |  TASK [Copy facts to files] *****************************************************
+2017-11-19 08:29:19,096 p=25286 u=vagrant |  ok: [192.168.100.1]
+2017-11-19 08:29:19,106 p=25286 u=vagrant |  ok: [192.168.100.3]
+2017-11-19 08:29:19,625 p=25286 u=vagrant |  [0;31m--- before: all_facts/192.168.100.2_facts.json
+[0m[0;32m+++ after: /tmp/tmpNzn4JT
+[0m[0;36m@@ -49,20 +49,5 @@
+[0m         "mtu": 1500, 
+         "operstatus": "administratively down", 
+         "type": "AmdP2"
+[0;31m-    }, 
+[0m[0;31m-    "Loopback5": {
+[0m[0;31m-        "bandwidth": 8000000, 
+[0m[0;31m-        "description": null, 
+[0m[0;31m-        "duplex": null, 
+[0m[0;31m-        "ipv4": {
+[0m[0;31m-            "address": "10.1.1.1", 
+[0m[0;31m-            "masklen": 32
+[0m[0;31m-        }, 
+[0m[0;31m-        "lineprotocol": "up ", 
+[0m[0;31m-        "macaddress": "10.1.1.1/32", 
+[0m[0;31m-        "mediatype": null, 
+[0m[0;31m-        "mtu": 1514, 
+[0m[0;31m-        "operstatus": "up", 
+[0m[0;31m-        "type": null
+[0m     }
+ }
+
+2017-11-19 08:29:19,625 p=25286 u=vagrant |  changed: [192.168.100.2]
+2017-11-19 08:29:19,629 p=25286 u=vagrant |  PLAY RECAP *********************************************************************
+2017-11-19 08:29:19,629 p=25286 u=vagrant |  192.168.100.1              : ok=3    changed=0    unreachable=0    failed=0   
+2017-11-19 08:29:19,630 p=25286 u=vagrant |  192.168.100.2              : ok=3    changed=1    unreachable=0    failed=0   
+2017-11-19 08:29:19,630 p=25286 u=vagrant |  192.168.100.3              : ok=3    changed=0    unreachable=0    failed=0   
