@@ -1,6 +1,7 @@
 {% extends "base_router.txt" %}
 
 
+
 {% block alias %}
 alias configure sh do sh
 alias exec ospf sh run | s ^router ospf
