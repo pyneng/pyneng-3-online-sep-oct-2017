@@ -15,6 +15,7 @@
           - login local
           - transport input ssh
         after:
-          - end
+          - exit
+          - exit
           - write
         provider: "{{ cli }}"
