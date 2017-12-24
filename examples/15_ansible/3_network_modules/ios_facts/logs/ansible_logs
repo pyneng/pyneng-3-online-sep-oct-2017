@@ -74,3 +74,739 @@
 2017-11-19 08:29:19,629 p=25286 u=vagrant |  192.168.100.1              : ok=3    changed=0    unreachable=0    failed=0   
 2017-11-19 08:29:19,630 p=25286 u=vagrant |  192.168.100.2              : ok=3    changed=1    unreachable=0    failed=0   
 2017-11-19 08:29:19,630 p=25286 u=vagrant |  192.168.100.3              : ok=3    changed=0    unreachable=0    failed=0   
+2017-12-03 20:26:03,586 p=15969 u=vagrant |  PLAY [Collect IOS facts] ******************************************************************
+2017-12-03 20:26:03,619 p=15969 u=vagrant |  TASK [Facts] ******************************************************************************
+2017-12-03 20:26:06,013 p=15981 u=vagrant |  creating new control socket for host 192.168.100.3:22 as user cisco
+2017-12-03 20:26:06,014 p=15981 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/c8fcab8477
+2017-12-03 20:26:06,011 p=15979 u=vagrant |  creating new control socket for host 192.168.100.1:22 as user cisco
+2017-12-03 20:26:06,016 p=15979 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/177e98c94f
+2017-12-03 20:26:06,018 p=15979 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:26:06,018 p=15979 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:26:06,014 p=15981 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:26:06,019 p=15981 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:26:06,042 p=15980 u=vagrant |  creating new control socket for host 192.168.100.2:22 as user cisco
+2017-12-03 20:26:06,042 p=15980 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/636649495d
+2017-12-03 20:26:06,043 p=15980 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:26:06,052 p=15980 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:26:06,353 paramiko.transport starting thread (client mode): 0xb5e1890c
+2017-12-03 20:26:06,353 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:26:06,354 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:26:06,354 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:26:06,360 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:26:06,360 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:26:06,360 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:26:06,360 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:26:06,361 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:26:06,361 paramiko.transport Compression agreed: none
+2017-12-03 20:26:06,364 paramiko.transport starting thread (client mode): 0xb5d5690c
+2017-12-03 20:26:06,367 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:26:06,368 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:26:06,368 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:26:06,369 paramiko.transport starting thread (client mode): 0xb5e008cc
+2017-12-03 20:26:06,371 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:26:06,372 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:26:06,373 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:26:06,373 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:26:06,373 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:26:06,373 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:26:06,373 paramiko.transport Compression agreed: none
+2017-12-03 20:26:06,398 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:26:06,399 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:26:06,399 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:26:06,399 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:26:06,400 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:26:06,400 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:26:06,400 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:26:06,400 paramiko.transport Compression agreed: none
+2017-12-03 20:26:06,402 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:26:06,565 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:26:06,579 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:26:06,729 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:26:06,730 paramiko.transport Switch to new keys ...
+2017-12-03 20:26:06,933 paramiko.transport userauth is OK
+2017-12-03 20:26:06,934 paramiko.transport Authentication (password) successful!
+2017-12-03 20:26:06,934 p=15981 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:26:06,935 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:26:06,936 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:26:06,936 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:26:06,937 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:06,938 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:06,940 p=15981 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:26:06,945 p=15981 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:26:06,945 p=15981 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:26:07,060 p=15981 u=vagrant |  firing event: on_authorize
+2017-12-03 20:26:07,063 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:26:07,064 paramiko.transport Switch to new keys ...
+2017-12-03 20:26:07,069 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:26:07,070 paramiko.transport Switch to new keys ...
+2017-12-03 20:26:07,119 p=15981 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:26:07,119 p=15981 u=vagrant |  connection established to 192.168.100.3 in 0:00:01.099844
+2017-12-03 20:26:07,119 p=15981 u=vagrant |  local socket is set to listening
+2017-12-03 20:26:07,269 paramiko.transport userauth is OK
+2017-12-03 20:26:07,271 paramiko.transport Authentication (password) successful!
+2017-12-03 20:26:07,271 p=15980 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:26:07,271 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:26:07,272 paramiko.transport userauth is OK
+2017-12-03 20:26:07,272 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:26:07,272 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:26:07,273 paramiko.transport Authentication (password) successful!
+2017-12-03 20:26:07,273 p=15979 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:26:07,273 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:26:07,274 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:07,275 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:26:07,275 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:26:07,276 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:07,277 p=15980 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:26:07,280 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:07,280 p=15980 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:26:07,281 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:26:07,283 p=15979 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:26:07,281 p=15980 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:26:07,288 p=15979 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:26:07,288 p=15979 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:26:07,340 p=15979 u=vagrant |  firing event: on_authorize
+2017-12-03 20:26:07,384 p=15979 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:26:07,384 p=15979 u=vagrant |  connection established to 192.168.100.1 in 0:00:01.365943
+2017-12-03 20:26:07,384 p=15979 u=vagrant |  local socket is set to listening
+2017-12-03 20:26:07,409 p=15980 u=vagrant |  firing event: on_authorize
+2017-12-03 20:26:07,473 p=15980 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:26:07,473 p=15980 u=vagrant |  connection established to 192.168.100.2 in 0:00:01.421817
+2017-12-03 20:26:07,473 p=15980 u=vagrant |  local socket is set to listening
+2017-12-03 20:26:08,000 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:08,000 p=15979 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:08,000 p=15979 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:08,000 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:08,001 p=15979 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:08,001 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:08,001 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:08,002 p=15981 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:08,002 p=15981 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:08,002 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:08,003 p=15981 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:08,004 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:08,029 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,478 p=16006 u=vagrant |  re-using existing socket for cisco@192.168.100.1:22
+2017-12-03 20:26:10,479 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:10,480 p=15979 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:10,480 p=15979 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:10,480 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,481 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:10,481 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,490 p=16007 u=vagrant |  re-using existing socket for cisco@192.168.100.3:22
+2017-12-03 20:26:10,491 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:10,491 p=15981 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:10,491 p=15981 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:10,492 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,492 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:10,492 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,538 p=16008 u=vagrant |  re-using existing socket for cisco@192.168.100.2:22
+2017-12-03 20:26:10,538 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:10,542 p=15980 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:10,542 p=15980 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:10,542 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:10,543 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:10,543 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,158 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,160 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,164 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,164 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,175 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,175 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,240 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,241 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,241 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,244 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,244 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,244 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,256 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,259 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,259 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,334 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,335 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,335 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,372 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,374 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,374 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,394 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,394 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,394 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,423 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,424 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,425 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,449 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,451 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,451 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,462 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,464 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,465 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,465 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,466 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,466 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,511 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,511 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,511 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,529 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,530 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,531 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,534 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,534 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,534 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,535 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,535 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,535 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,560 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,563 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,564 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,590 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,595 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,596 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,605 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,605 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,606 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,609 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,610 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,610 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,647 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,649 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,649 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,685 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,685 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,685 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,694 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,726 p=15969 u=vagrant |  ok: [192.168.100.1]
+2017-12-03 20:26:11,737 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,738 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,738 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,749 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,750 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,750 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,784 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,785 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,786 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,841 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,863 p=15969 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:26:11,878 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,879 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:11,880 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:11,964 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:11,982 p=15969 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:26:11,986 p=15969 u=vagrant |  TASK [Create all_facts dir] ***************************************************************
+2017-12-03 20:26:12,428 p=15969 u=vagrant |  changed: [192.168.100.1]
+2017-12-03 20:26:12,435 p=15969 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:26:12,445 p=15969 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:26:12,453 p=15969 u=vagrant |  TASK [Copy facts to files] ****************************************************************
+2017-12-03 20:26:12,493 p=15969 u=vagrant |  fatal: [192.168.100.1]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:26:12,498 p=15969 u=vagrant |  fatal: [192.168.100.2]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:26:12,506 p=15969 u=vagrant |  fatal: [192.168.100.3]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:26:12,509 p=15969 u=vagrant |  	to retry, use: --limit @/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.retry
+
+2017-12-03 20:26:12,509 p=15969 u=vagrant |  PLAY RECAP ********************************************************************************
+2017-12-03 20:26:12,509 p=15969 u=vagrant |  192.168.100.1              : ok=2    changed=1    unreachable=0    failed=1   
+2017-12-03 20:26:12,510 p=15969 u=vagrant |  192.168.100.2              : ok=2    changed=0    unreachable=0    failed=1   
+2017-12-03 20:26:12,510 p=15969 u=vagrant |  192.168.100.3              : ok=2    changed=0    unreachable=0    failed=1   
+2017-12-03 20:26:30,965 p=16233 u=vagrant |  PLAY [Collect IOS facts] ******************************************************************
+2017-12-03 20:26:30,977 p=16233 u=vagrant |  TASK [Facts] ******************************************************************************
+2017-12-03 20:26:33,336 p=16243 u=vagrant |  re-using existing socket for cisco@192.168.100.1:22
+2017-12-03 20:26:33,336 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:33,337 p=15979 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:33,337 p=15979 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:33,337 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:33,337 p=15979 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:33,337 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:33,355 p=16244 u=vagrant |  re-using existing socket for cisco@192.168.100.2:22
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:33,358 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:33,468 p=16245 u=vagrant |  re-using existing socket for cisco@192.168.100.3:22
+2017-12-03 20:26:33,468 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:33,468 p=15981 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:33,468 p=15981 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:33,468 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:33,469 p=15981 u=vagrant |  socket operation is RUN
+2017-12-03 20:26:33,469 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,805 p=16258 u=vagrant |  re-using existing socket for cisco@192.168.100.1:22
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:35,806 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,831 p=16259 u=vagrant |  re-using existing socket for cisco@192.168.100.2:22
+2017-12-03 20:26:35,832 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:35,835 p=15980 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:35,835 p=15980 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:35,835 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,836 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:35,836 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,984 p=16260 u=vagrant |  re-using existing socket for cisco@192.168.100.3:22
+2017-12-03 20:26:35,985 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:35,985 p=15981 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:26:35,985 p=15981 u=vagrant |  updating play_context for connection
+2017-12-03 20:26:35,985 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:35,985 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:35,986 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,530 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,530 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,538 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,539 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,540 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,540 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,541 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,545 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,546 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,556 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,557 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,557 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,560 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,561 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,561 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,658 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,659 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,659 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,669 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,669 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,669 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,694 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,695 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,695 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,718 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,719 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,720 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,726 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,728 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,728 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,737 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,738 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,738 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,769 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,770 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,770 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,794 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,795 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,796 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,803 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,804 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,804 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,830 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,833 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,833 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,854 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,854 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,854 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,864 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,865 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,865 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,879 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,882 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,882 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,894 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,895 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,895 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,932 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,933 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,933 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,960 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,960 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,960 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,965 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,966 p=15979 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,967 p=15979 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,980 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,983 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:36,983 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:36,997 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:36,999 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:37,000 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:37,050 p=15979 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:37,071 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:37,072 p=15981 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:37,073 p=15981 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:37,081 p=16233 u=vagrant |  ok: [192.168.100.1]
+2017-12-03 20:26:37,090 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:37,091 p=15980 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:26:37,091 p=15980 u=vagrant |  socket operation is EXEC
+2017-12-03 20:26:37,196 p=15981 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:37,220 p=15980 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:26:37,235 p=16233 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:26:37,243 p=16233 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:26:37,250 p=16233 u=vagrant |  TASK [Create all_facts dir] ***************************************************************
+2017-12-03 20:26:37,766 p=16233 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:26:37,769 p=16233 u=vagrant |  ok: [192.168.100.1]
+2017-12-03 20:26:37,772 p=16233 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:26:37,777 p=16233 u=vagrant |  TASK [Copy facts to files] ****************************************************************
+2017-12-03 20:26:38,606 p=16233 u=vagrant |  changed: [192.168.100.2]
+2017-12-03 20:26:38,624 p=16233 u=vagrant |  changed: [192.168.100.3]
+2017-12-03 20:26:38,626 p=16233 u=vagrant |  changed: [192.168.100.1]
+2017-12-03 20:26:38,629 p=16233 u=vagrant |  PLAY RECAP ********************************************************************************
+2017-12-03 20:26:38,629 p=16233 u=vagrant |  192.168.100.1              : ok=3    changed=1    unreachable=0    failed=0   
+2017-12-03 20:26:38,629 p=16233 u=vagrant |  192.168.100.2              : ok=3    changed=1    unreachable=0    failed=0   
+2017-12-03 20:26:38,629 p=16233 u=vagrant |  192.168.100.3              : ok=3    changed=1    unreachable=0    failed=0   
+2017-12-03 20:27:07,056 p=15979 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:07,056 p=15979 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,056 p=15979 u=vagrant |  closing local listener
+2017-12-03 20:27:07,056 p=15979 u=vagrant |  closing the connection
+2017-12-03 20:27:07,056 p=15979 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:07,057 p=15979 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:07,057 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:07,057 p=15979 u=vagrant |  cli session is now closed
+2017-12-03 20:27:07,057 p=15979 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:07,057 p=15979 u=vagrant |  removing the local control socket
+2017-12-03 20:27:07,057 p=15979 u=vagrant |  shutdown complete
+2017-12-03 20:27:07,058 p=15979 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:07,058 p=15979 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,058 p=15979 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:07,058 p=15979 u=vagrant |  shutdown local socket, connection was active for 0:01:01.040164 secs
+2017-12-03 20:27:07,200 p=15981 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:07,200 p=15981 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  closing local listener
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  closing the connection
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:07,201 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  cli session is now closed
+2017-12-03 20:27:07,201 p=15981 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  removing the local control socket
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  shutdown complete
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:07,202 p=15981 u=vagrant |  shutdown local socket, connection was active for 0:01:01.183405 secs
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  closing local listener
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  closing the connection
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:07,224 p=15980 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:07,224 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:07,225 p=15980 u=vagrant |  cli session is now closed
+2017-12-03 20:27:07,225 p=15980 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:07,225 p=15980 u=vagrant |  removing the local control socket
+2017-12-03 20:27:07,225 p=15980 u=vagrant |  shutdown complete
+2017-12-03 20:27:07,225 p=15980 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:07,227 p=15980 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:07,227 p=15980 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:07,227 p=15980 u=vagrant |  shutdown local socket, connection was active for 0:01:01.175451 secs
+2017-12-03 20:27:19,739 p=16715 u=vagrant |  PLAY [Collect IOS facts] ******************************************************************
+2017-12-03 20:27:19,751 p=16715 u=vagrant |  TASK [Facts] ******************************************************************************
+2017-12-03 20:27:22,132 p=16726 u=vagrant |  creating new control socket for host 192.168.100.2:22 as user cisco
+2017-12-03 20:27:22,133 p=16726 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/636649495d
+2017-12-03 20:27:22,133 p=16726 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:27:22,133 p=16726 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:27:22,140 p=16725 u=vagrant |  creating new control socket for host 192.168.100.1:22 as user cisco
+2017-12-03 20:27:22,140 p=16725 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/177e98c94f
+2017-12-03 20:27:22,140 p=16725 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:27:22,140 p=16725 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:27:22,214 p=16727 u=vagrant |  creating new control socket for host 192.168.100.3:22 as user cisco
+2017-12-03 20:27:22,215 p=16727 u=vagrant |  control socket path is /home/vagrant/.ansible/pc/c8fcab8477
+2017-12-03 20:27:22,215 p=16727 u=vagrant |  current working directory is /home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts
+2017-12-03 20:27:22,219 p=16727 u=vagrant |  using connection plugin network_cli
+2017-12-03 20:27:22,483 paramiko.transport starting thread (client mode): 0xb5d688cc
+2017-12-03 20:27:22,484 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:27:22,494 paramiko.transport starting thread (client mode): 0xb5d8b90c
+2017-12-03 20:27:22,494 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:27:22,513 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:27:22,513 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:27:22,519 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:27:22,519 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:27:22,519 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:27:22,519 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:27:22,519 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:27:22,519 paramiko.transport Compression agreed: none
+2017-12-03 20:27:22,522 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:27:22,530 paramiko.transport starting thread (client mode): 0xb5daa90c
+2017-12-03 20:27:22,530 paramiko.transport Local version/idstring: SSH-2.0-paramiko_2.3.1
+2017-12-03 20:27:22,530 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:27:22,531 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:27:22,533 paramiko.transport Remote version/idstring: SSH-2.0-Cisco-1.25
+2017-12-03 20:27:22,533 paramiko.transport Connected (version 2.0, client Cisco-1.25)
+2017-12-03 20:27:22,536 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:27:22,536 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:27:22,536 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:27:22,536 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:27:22,536 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:27:22,536 paramiko.transport Compression agreed: none
+2017-12-03 20:27:22,539 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:27:22,545 paramiko.transport kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+2017-12-03 20:27:22,545 paramiko.transport Kex agreed: diffie-hellman-group-exchange-sha1
+2017-12-03 20:27:22,545 paramiko.transport HostKey agreed: ssh-rsa
+2017-12-03 20:27:22,545 paramiko.transport Cipher agreed: aes128-cbc
+2017-12-03 20:27:22,545 paramiko.transport MAC agreed: hmac-sha1
+2017-12-03 20:27:22,545 paramiko.transport Compression agreed: none
+2017-12-03 20:27:22,749 paramiko.transport Got server p (2048 bits)
+2017-12-03 20:27:23,022 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:27:23,033 paramiko.transport Switch to new keys ...
+2017-12-03 20:27:23,050 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:27:23,051 paramiko.transport Switch to new keys ...
+2017-12-03 20:27:23,149 paramiko.transport kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+2017-12-03 20:27:23,150 paramiko.transport Switch to new keys ...
+2017-12-03 20:27:23,224 paramiko.transport userauth is OK
+2017-12-03 20:27:23,224 paramiko.transport Authentication (password) successful!
+2017-12-03 20:27:23,225 p=16725 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:27:23,225 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:27:23,226 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:27:23,226 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:27:23,227 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,228 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,233 p=16725 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:27:23,234 p=16725 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:27:23,234 p=16725 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:27:23,252 paramiko.transport userauth is OK
+2017-12-03 20:27:23,254 paramiko.transport Authentication (password) successful!
+2017-12-03 20:27:23,254 p=16726 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:27:23,254 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:27:23,255 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:27:23,255 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:27:23,256 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,258 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,259 p=16726 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:27:23,264 p=16726 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:27:23,264 p=16726 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:27:23,317 p=16725 u=vagrant |  firing event: on_authorize
+2017-12-03 20:27:23,351 paramiko.transport userauth is OK
+2017-12-03 20:27:23,352 paramiko.transport Authentication (password) successful!
+2017-12-03 20:27:23,353 p=16727 u=vagrant |  ssh connection done, setting terminal
+2017-12-03 20:27:23,353 paramiko.transport [chan 0] Max packet in: 32768 bytes
+2017-12-03 20:27:23,354 paramiko.transport [chan 0] Max packet out: 4096 bytes
+2017-12-03 20:27:23,354 paramiko.transport Secsh channel 0 opened.
+2017-12-03 20:27:23,355 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,356 p=16725 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:27:23,356 p=16725 u=vagrant |  connection established to 192.168.100.1 in 0:00:01.215590
+2017-12-03 20:27:23,356 p=16725 u=vagrant |  local socket is set to listening
+2017-12-03 20:27:23,357 paramiko.transport [chan 0] Sesch channel 0 request ok
+2017-12-03 20:27:23,358 p=16727 u=vagrant |  loaded terminal plugin for network_os ios
+2017-12-03 20:27:23,363 p=16727 u=vagrant |  loaded cliconf plugin for network_os ios
+2017-12-03 20:27:23,365 p=16727 u=vagrant |  firing event: on_open_shell()
+2017-12-03 20:27:23,386 p=16726 u=vagrant |  firing event: on_authorize
+2017-12-03 20:27:23,453 p=16726 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:27:23,453 p=16726 u=vagrant |  connection established to 192.168.100.2 in 0:00:01.320034
+2017-12-03 20:27:23,453 p=16726 u=vagrant |  local socket is set to listening
+2017-12-03 20:27:23,499 p=16727 u=vagrant |  firing event: on_authorize
+2017-12-03 20:27:23,564 p=16727 u=vagrant |  ssh connection has completed successfully
+2017-12-03 20:27:23,564 p=16727 u=vagrant |  connection established to 192.168.100.3 in 0:00:01.348380
+2017-12-03 20:27:23,564 p=16727 u=vagrant |  local socket is set to listening
+2017-12-03 20:27:24,120 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:24,121 p=16726 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:24,122 p=16726 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:24,122 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:24,123 p=16726 u=vagrant |  socket operation is RUN
+2017-12-03 20:27:24,123 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:24,129 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:24,129 p=16725 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:24,130 p=16725 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:24,130 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:24,131 p=16725 u=vagrant |  socket operation is RUN
+2017-12-03 20:27:24,131 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:24,192 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:24,192 p=16727 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:24,193 p=16727 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:24,193 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:24,193 p=16727 u=vagrant |  socket operation is RUN
+2017-12-03 20:27:24,193 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,595 p=16753 u=vagrant |  re-using existing socket for cisco@192.168.100.2:22
+2017-12-03 20:27:26,595 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:26,597 p=16726 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:26,597 p=16726 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:26,598 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,598 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:26,598 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,660 p=16752 u=vagrant |  re-using existing socket for cisco@192.168.100.1:22
+2017-12-03 20:27:26,660 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:26,664 p=16725 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:26,664 p=16725 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:26,664 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,665 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:26,665 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,667 p=16754 u=vagrant |  re-using existing socket for cisco@192.168.100.3:22
+2017-12-03 20:27:26,668 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:26,668 p=16727 u=vagrant |  socket operation is CONTEXT
+2017-12-03 20:27:26,669 p=16727 u=vagrant |  updating play_context for connection
+2017-12-03 20:27:26,669 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:26,669 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:26,669 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,299 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,300 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,302 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,303 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,307 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,308 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,308 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,314 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,315 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,315 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,320 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,321 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,345 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,345 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,345 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,361 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,361 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,362 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,417 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,418 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,420 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,445 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,446 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,447 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,455 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,455 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,455 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,492 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,492 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,492 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,521 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,522 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,522 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,525 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,525 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,525 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,553 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,554 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,554 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,577 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,577 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,578 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,581 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,582 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,583 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,602 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,605 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,605 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,639 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,639 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,639 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,651 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,652 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,652 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,659 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,660 p=16725 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,660 p=16725 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,714 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,714 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,714 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,718 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,719 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,719 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,757 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,760 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,760 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,764 p=16725 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,787 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,787 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,787 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,793 p=16715 u=vagrant |  ok: [192.168.100.1]
+2017-12-03 20:27:27,827 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,830 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,830 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,873 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,874 p=16726 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,874 p=16726 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,923 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,924 p=16727 u=vagrant |  incoming request accepted on persistent socket
+2017-12-03 20:27:27,924 p=16727 u=vagrant |  socket operation is EXEC
+2017-12-03 20:27:27,976 p=16726 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:27,998 p=16715 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:27:28,024 p=16727 u=vagrant |  socket operation completed with rc 0
+2017-12-03 20:27:28,043 p=16715 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:27:28,050 p=16715 u=vagrant |  TASK [Create all_facts dir] ***************************************************************
+2017-12-03 20:27:28,508 p=16715 u=vagrant |  ok: [192.168.100.3]
+2017-12-03 20:27:28,519 p=16715 u=vagrant |  ok: [192.168.100.1]
+2017-12-03 20:27:28,522 p=16715 u=vagrant |  ok: [192.168.100.2]
+2017-12-03 20:27:28,527 p=16715 u=vagrant |  TASK [Copy facts to files] ****************************************************************
+2017-12-03 20:27:28,565 p=16715 u=vagrant |  fatal: [192.168.100.1]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:27:28,570 p=16715 u=vagrant |  fatal: [192.168.100.2]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:27:28,578 p=16715 u=vagrant |  fatal: [192.168.100.3]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable\n\nThe error appears to have been in '/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.yml': line 22, column 7, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n    - name: Copy facts to files\n      ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: Unable to look up a name or access an attribute in template string ({{ ansible_facts | to_nice_json }}).\nMake sure your variable name does not contain invalid characters like '-': Object of type 'StrictUndefined' is not JSON serializable"}
+2017-12-03 20:27:28,580 p=16715 u=vagrant |  	to retry, use: --limit @/home/vagrant/pyneng-3/pyneng-online-sep-oct-2017/examples/15_ansible/3_network_modules/ios_facts/3_ios_facts.retry
+
+2017-12-03 20:27:28,580 p=16715 u=vagrant |  PLAY RECAP ********************************************************************************
+2017-12-03 20:27:28,581 p=16715 u=vagrant |  192.168.100.1              : ok=2    changed=0    unreachable=0    failed=1   
+2017-12-03 20:27:28,581 p=16715 u=vagrant |  192.168.100.2              : ok=2    changed=0    unreachable=0    failed=1   
+2017-12-03 20:27:28,581 p=16715 u=vagrant |  192.168.100.3              : ok=2    changed=0    unreachable=0    failed=1   
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  closing local listener
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  closing the connection
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:57,769 p=16725 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:57,769 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:57,770 p=16725 u=vagrant |  cli session is now closed
+2017-12-03 20:27:57,770 p=16725 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:57,770 p=16725 u=vagrant |  removing the local control socket
+2017-12-03 20:27:57,770 p=16725 u=vagrant |  shutdown complete
+2017-12-03 20:27:57,771 p=16725 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:57,771 p=16725 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:57,771 p=16725 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:57,771 p=16725 u=vagrant |  shutdown local socket, connection was active for 0:00:35.630441 secs
+2017-12-03 20:27:57,983 p=16726 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:57,983 p=16726 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:57,983 p=16726 u=vagrant |  closing local listener
+2017-12-03 20:27:57,984 p=16726 u=vagrant |  closing the connection
+2017-12-03 20:27:57,984 p=16726 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:57,984 p=16726 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:57,984 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:57,986 p=16726 u=vagrant |  cli session is now closed
+2017-12-03 20:27:57,986 p=16726 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:57,986 p=16726 u=vagrant |  removing the local control socket
+2017-12-03 20:27:57,986 p=16726 u=vagrant |  shutdown complete
+2017-12-03 20:27:57,989 p=16726 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:57,990 p=16726 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:57,990 p=16726 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:57,990 p=16726 u=vagrant |  shutdown local socket, connection was active for 0:00:35.856905 secs
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  persistent connection idle timeout triggered, timeout value is 30 secs
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  closing local listener
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  closing the connection
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  closing ssh connection to device
+2017-12-03 20:27:58,029 p=16727 u=vagrant |  firing event: on_close_shell()
+2017-12-03 20:27:58,029 paramiko.transport [chan 0] EOF sent (0)
+2017-12-03 20:27:58,031 p=16727 u=vagrant |  cli session is now closed
+2017-12-03 20:27:58,031 p=16727 u=vagrant |  ssh connection has been closed successfully
+2017-12-03 20:27:58,031 p=16727 u=vagrant |  removing the local control socket
+2017-12-03 20:27:58,031 p=16727 u=vagrant |  shutdown complete
+2017-12-03 20:27:58,032 p=16727 u=vagrant |  Traceback (most recent call last):
+  File "/home/vagrant/venv/ansible-stable-2-4/bin/ansible-connection", line 132, in run
+    (s, addr) = self.socket.accept()
+  File "/usr/local/lib/python3.6/socket.py", line 205, in accept
+    fd, addr = self._accept()
+OSError: [Errno 9] Bad file descriptor
+
+2017-12-03 20:27:58,032 p=16727 u=vagrant |  shutdown persistent connection requested
+2017-12-03 20:27:58,032 p=16727 u=vagrant |  persistent connection is not active
+2017-12-03 20:27:58,032 p=16727 u=vagrant |  shutdown local socket, connection was active for 0:00:35.816462 secs
