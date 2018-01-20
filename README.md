@@ -5,4 +5,3 @@
 * [examples](https://github.com/pyneng/pyneng-online-sep-oct-2017/tree/master/examples) - примеры кода, которые используются на лекциях
 * [exercises](https://github.com/pyneng/pyneng-online-sep-oct-2017/tree/master/exercises) - домашние задания
 * [presentations](https://github.com/pyneng/pyneng-online-sep-oct-2017/tree/master/presentations) - PDF версии презентаций
-
